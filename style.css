@@ -20,14 +20,14 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   margin-top: 100px;
 }
 
 h2 {
-  font-size: 27px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   margin-top: 40px;
@@ -45,7 +45,7 @@ h2 {
     justify-content: space-between;
     list-style: none;
     text-transform: uppercase;
-    font-size: 120%;
+    font-size: 20px;
     color: #223cfa;
   }
 }
@@ -74,13 +74,67 @@ h2 {
 /************* portfolie ****************/
 
 .body_img3 {
-  background-image: url(img/baggrund2.webp);
+  background-image: url(img/baggrund3.webp);
+}
+
+/************* Kontakt ****************/
+
+.body_img4 {
+  background-image: url(img/baggrund4.webp);
+}
+.kontakt_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mail_icon {
+  height: 84px;
+  width: 83px;
+}
+.telefon_icon {
+  height: 80px;
+  width: 65px;
+  padding-left: 7px;
+}
+p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
 /************* footer ****************/
 
 .footer_grid {
-  margin-top: 250px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+  padding-top: 20px;
+}
+
+.footer_grid_2 {
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+.footer_grid_3 {
+  display: flex;
+  justify-content: space-around;
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.footer_grid p {
+  font-size: 11px;
+}
+
+.footer_grid {
+  padding-top: 20px;
   border-top: 1px solid #000;
-  padding-top: 10px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.footer_grid img {
+  max-width: 70px;
+  height: 50px;
 }
