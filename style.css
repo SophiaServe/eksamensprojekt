@@ -1,0 +1,86 @@
+/************* Site ****************/
+
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.logo {
+  width: 15%;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+h2 {
+  font-size: 27px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    width: 13%;
+  }
+  .nav_header {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 120%;
+    color: #223cfa;
+  }
+}
+
+/************* Forside ****************/
+
+.body_img {
+  background-image: url(img/baggrund.webp);
+}
+.nav_header {
+  font-family: "Space Mono", monospace;
+}
+
+.forside_tekst {
+  font-size: 25x;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+
+/************* Om mig ****************/
+
+.body_img2 {
+  background-image: url(img/baggrund2.webp);
+}
+
+/************* portfolie ****************/
+
+.body_img3 {
+  background-image: url(img/baggrund2.webp);
+}
+
+/************* footer ****************/
+
+.footer_grid {
+  margin-top: 250px;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+}
