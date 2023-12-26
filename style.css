@@ -60,9 +60,20 @@ h2 {
 }
 
 .forside_tekst {
-  font-size: 25x;
+  font-size: 25px;
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+  .forside_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .billede_1 {
+    width: 650px;
+    height: 340px;
+  }
 }
 
 /************* Om mig ****************/
