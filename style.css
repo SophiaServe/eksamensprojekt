@@ -1,52 +1,73 @@
 /************* Site ****************/
-
-* {
-  all: unset;
-  display: revert;
-  cursor: revert;
+@font-face {
+  font-family: font_1;
+  src: url(./fonts/Poppins-ExtraLight.woff);
 }
 
-img {
-  max-width: 100%;
+@font-face {
+  font-family: font_2;
+  src: url(./);
+}
+
+* {
+  box-sizing: border-box;
+  width: 100%;
 }
 
 body {
   background-color: #ffffff;
+}
+main {
   padding-left: 7%;
   padding-right: 7%;
 }
+
 .logo {
   width: 15%;
 }
 
 h1 {
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-size: 4rem;
+  font-family: font_1;
   margin-top: 100px;
 }
 
 h2 {
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-size: 2rem;
+  font-family: font_1;
+  margin-top: 40px;
+}
+p {
+  font-size: 14px;
+  font-family: font_1;
+  font-weight: lighter;
   margin-top: 40px;
 }
 
 @media (min-width: 800px) {
   .logo {
-    width: 13%;
+    width: 60%;
+    padding-right: 5%;
   }
   .nav_header {
     display: flex;
     margin-top: 20px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     align-items: center;
     justify-content: space-between;
     list-style: none;
     text-transform: uppercase;
-    font-size: 20px;
+  }
+
+  .nav_header a {
+    font-size: 1.5rem;
+    text-decoration: none;
     color: #223cfa;
+    font-family: "Space Mono", monospace;
+  }
+
+  .nav_header a:hover {
+    font-size: 1.7rem;
   }
 }
 
@@ -55,24 +76,18 @@ h2 {
 .body_img {
   background-image: url(img/baggrund.webp);
 }
-.nav_header {
-  font-family: "Space Mono", monospace;
-}
 
-.forside_tekst {
-  font-size: 25px;
-  font-family: "Poppins", sans-serif;
-  margin-top: 20px;
+#forside_tekst {
+  font-size: 1.5rem;
+  font-family: font_1;
+  font-weight: lighter;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 800px) {
-  .forside_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
   .billede_1 {
-    width: 650px;
-    height: 340px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -103,64 +118,46 @@ h2 {
   border-bottom: 1px solid #000;
 }
 
+.tema_billede {
+  border-radius: 50px;
+  width: 100%;
+  height: auto;
+}
+
 /************* Kontakt ****************/
 
 .body_img4 {
   background-image: url(img/baggrund4.webp);
 }
-.kontakt_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+
 .mail_icon {
-  height: 84px;
-  width: 83px;
+  width: 100%;
+  height: auto;
 }
 .telefon_icon {
-  height: 80px;
-  width: 65px;
+  width: 100%;
+  height: auto;
   padding-left: 7px;
-}
-p {
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  margin-top: 40px;
 }
 
 /************* footer ****************/
 
-.footer_grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3px;
-  padding-top: 20px;
-}
-
-.footer_grid_2 {
-  grid-row: 1;
-  grid-column: 1/2;
-}
-
-.footer_grid_3 {
-  display: flex;
-  justify-content: space-around;
-  grid-row: 1;
-  grid-column: 2/3;
-}
-
 .footer_grid p {
-  font-size: 11px;
+  font-size: 0.8rem;
+  margin-left: 5%;
 }
 
 .footer_grid {
-  padding-top: 20px;
   border-top: 1px solid #000;
-  margin-top: 150px;
+  margin-top: 25px;
   margin-bottom: 30px;
 }
 
-.footer_grid img {
-  max-width: 70px;
-  height: 50px;
+.footer_grid_3 {
+  margin-top: 10px;
+}
+
+.footer_grid_3 img {
+  width: 30%;
+  height: auto;
 }
