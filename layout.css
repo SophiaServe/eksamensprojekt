@@ -18,6 +18,17 @@
   }
 }
 /************* Kontakt ****************/
+.kontakt_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#mail_tekst {
+  grid-column: 2/4;
+}
+#telefon_tekst {
+  grid-column: 2/4;
+}
 
 /************* Footer ****************/
 

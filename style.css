@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: font_2;
-  src: url(./);
+  src: url(./fonts/SpaceMono-Regular.woff);
 }
 
 * {
@@ -63,7 +63,7 @@ p {
     font-size: 1.5rem;
     text-decoration: none;
     color: #223cfa;
-    font-family: "Space Mono", monospace;
+    font-family: font_2;
   }
 
   .nav_header a:hover {
@@ -94,8 +94,9 @@ p {
 /************* Om mig ****************/
 
 .body_img2 {
-  background-image: url(img/baggrund2.webp);
+  background-image: url(img/baggrund3.webp);
 }
+
 .mig_grid_1 p {
   margin-top: 10px;
 }
@@ -130,16 +131,35 @@ p {
   background-image: url(img/baggrund4.webp);
 }
 
-.mail_icon {
-  width: 100%;
+#mail_icon {
+  width: 35%;
   height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.telefon_icon {
-  width: 100%;
+#telefon_icon {
+  width: 30%;
   height: auto;
   padding-left: 7px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-
+#mail_tekst {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#telefon_tekst {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (min-width: 800px) {
+  #mail_icon {
+    width: 30%;
+  }
+  #telefon_icon {
+    width: 25%;
+  }
+}
 /************* footer ****************/
 
 .footer_grid p {
