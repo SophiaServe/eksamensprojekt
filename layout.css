@@ -1,6 +1,11 @@
-/************* Forside ****************/
+/* ________DESKTOP______ */
 
 @media (min-width: 800px) {
+  /************* Forside ****************/
+  .forside_grid_mobile {
+    display: none;
+  }
+
   .forside_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -16,35 +21,116 @@
     grid-column: 2/3;
     grid-row: 1/3;
   }
-}
-/************* Kontakt ****************/
-.kontakt_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  /************* Kontakt ****************/
+  .kontakt_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #mail_tekst {
+    grid-column: 2/4;
+  }
+  #telefon_tekst {
+    grid-column: 2/4;
+  }
+  /************* om mig ****************/
+
+  .mig_grid_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .mig_grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+
+  /************* Footer ****************/
+
+  .footer_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+  }
+  .footer_grid_2 {
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+  .footer_grid_3 {
+    display: flex;
+    justify-content: space-around;
+    grid-row: 1;
+    grid-column: 3/4;
+  }
 }
 
-#mail_tekst {
-  grid-column: 2/4;
-}
-#telefon_tekst {
-  grid-column: 2/4;
-}
+/* _________Mobile_________ */
 
-/************* Footer ****************/
+@media (max-width: 800px) {
+  /************* Forside ****************/
+  .forside_grid_mobile {
+    display: block;
+  }
 
-.footer_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1;
-}
-.footer_grid_2 {
-  grid-row: 1;
-  grid-column: 1/2;
-}
+  .forside_grid {
+    display: none;
+  }
 
-.footer_grid_3 {
-  display: flex;
-  justify-content: space-around;
-  grid-row: 1;
-  grid-column: 3/4;
+  .forside_grid {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  #forside_grid_1_child_1 {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+
+  #forside_grid_1_child_2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  /************* om mig ****************/
+
+  .mig_grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /************* projekter ****************/
+
+  /************* Kontakt ****************/
+  .kontakt_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #mail_tekst {
+    grid-column: 2/4;
+  }
+  #telefon_tekst {
+    grid-column: 2/4;
+  }
+
+  /************* Footer ****************/
+
+  .footer_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+  }
+  .footer_grid_2 {
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+  .footer_grid_3 {
+    display: flex;
+    justify-content: space-around;
+    grid-row: 1;
+    grid-column: 3/4;
+  }
 }
