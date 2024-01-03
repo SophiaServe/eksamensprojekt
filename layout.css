@@ -46,7 +46,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0px;
   }
-
+  .mit_cv_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
   /************* Footer ****************/
 
   .footer_grid {

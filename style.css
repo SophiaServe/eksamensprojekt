@@ -46,7 +46,7 @@ h3 {
 h4 {
   font-size: 1rem;
   font-family: font_1;
-  font-weight: bolder;
+  font-weight: 850;
 }
 
 p {
@@ -131,16 +131,62 @@ p {
   margin-top: 35px;
 }
 
+.mit_cv_item {
+  background-color: #f5f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
 /************* projekter ****************/
 
 .body_img3 {
   background-image: url(img/baggrund3.webp);
 }
 
-#tema_billede {
-  border-radius: 70%;
+.projekt-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  padding-right: 8%;
+}
+
+.tema_02 h2,
+.tema_03 h2,
+.tema_04 h2,
+.tema_05 h2 {
+  text-shadow: 2px 2px 4px black;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #223cfa;
+  text-align: center;
+}
+
+.tema_02,
+.tema_03,
+.tema_04,
+.tema_05 {
+  position: relative;
+  margin: 1rem;
+}
+
+.tema_02 a img,
+.tema_03 a img,
+.tema_04 a img,
+.tema_05 a img {
   width: 100%;
   height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+.tema_02 img:hover,
+.tema_03 img:hover,
+.tema_04 img:hover,
+.tema_05 img:hover {
+  transform: scale(1.1);
 }
 
 /************* Kontakt ****************/
@@ -159,14 +205,6 @@ p {
   width: 30%;
   height: auto;
   padding-left: 7px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-#mail_tekst {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-#telefon_tekst {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -234,9 +272,6 @@ p {
     font-weight: bolder;
   }
 
-  .nav-container {
-    display: block;
-  }
   .nav-container {
     display: block;
     position: relative;
