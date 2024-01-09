@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
+    <meta name="robots" content="noindex">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/">
+    <link rel="manifest" href="/site.webmanifest">
 
-    <title>Projekter</title>
+    <title>Web</title>
 </head>
 
 
@@ -20,19 +25,19 @@
         <nav>
             <div class="navbar">
                 <div class="container nav-container">
-                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <input class="checkbox" type="checkbox" />
                     <div class="hamburger-lines">
                         <span class="line line1"></span>
                         <span class="line line2"></span>
                         <span class="line line3"></span>
                     </div>
 
-                    <div class="menu-items">
+                    <ul class="menu-items">
                         <li><a href="index.html">Forside</a></li>
                         <li><a href="mig.html">Om mig</a></li>
                         <li><a href="projekter.html"><em>Projekter</em></a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
-                    </div>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -46,9 +51,9 @@
 
             <div class="menu-items_desktop">
                 <ul>
-                    <div class="logo_desktop">
+                    <li class="logo_desktop">
                         <a href="index.html"><img src="img/logo.webp" alt="logo"></a>
-                    </div>
+                    </li>
                     <li><a href="index.html">Forside</a></li>
                     <li><a href="mig.html">Om mig</a></li>
                     <li><a href="projekter.html"><em>Projekter</em></a></li>
@@ -83,25 +88,30 @@
                     billedbehandling ved at arbejde med Photoshop. Jeg har også fået indsigt i opsætning af tekst og
                     billeder i Figma, hvilket har udvidet mine kompetencer inden for multimediedesign. </p>
             </div>
-            <div class="tema_lært">
-                <h2>Temaet har lært mig:</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Figma</li>
-                    <li>FileZila</li>
-                    <li>Respontivt webdesign</li>
-                    <li>Squoosh</li>
-                    <li>Media queries</li>
-                    <li>Prettier</li>
-                    <li>Grid</li>
-                    <li>Flex</li>
-                </ul>
+
+            <div>
+                <div class="tema_lært">
+                    <h2>Temaet har lært mig:</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Figma</li>
+                        <li>FileZila</li>
+                        <li>Respontivt webdesign</li>
+                        <li>Squoosh</li>
+                        <li>Media queries</li>
+                        <li>Prettier</li>
+                        <li>Grid</li>
+                        <li>Flex</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
+
+
         <div class="tema_opgave">
-            <div id="tema_tekst">
+            <div class="tema_tekst">
                 <h2>Studiestartsprøve: 02.01.02-Website</h2>
                 <p>
                     02.01.02-Website var min første store opgave fra første semester. Til dette tema har jeg lavet en
@@ -114,7 +124,7 @@
                     Klik for at se mit færdige resultat:
                 </p>
             </div>
-            <div id="pil_icon">
+            <div class="pil_icon">
                 <img src="img/pil_icon.webp" alt="pil">
             </div>
             <div id="tema_billede_web">
@@ -123,35 +133,38 @@
             </div>
         </div>
 
+
+
         <div class="tema_opgave_web">
-            <div id="tema_tekst">
+            <div class="tema_tekst">
                 <h2>HTML sproget</h2>
                 <p>
                     I vores første tema blev vi introduceret til HTML sproget. HTML er et markup-sprog, der bruges
                     til at strukturere og præsentere indholdet på websteder. Det bruger en række tags eller elementer
-                    til at definere forskellige dele af en webside. Til højre kan i se en bid af min index.html. Her
+                    til at definere forskellige dele af en webside. Her kan i se en bid af min index.html. Her
                     anvender jeg nogle grundlæggende termer og koncepter inden
                     for HTML. Her har jeg bla. brugt et "dl" - tag, som er en definition list, som bruges til at
                     beskrive termer og deres definition. Indenunder "dl" - tag ligger "dt" - tagget som er termet og
                     "dd" - tagget som er definition.
                 </p>
             </div>
-            <div id="pil_icon">
+            <div class="pil_icon">
                 <img src="img/pil_icon.webp" alt="pil">
             </div>
-            <div id="tema_billede_web">
-                <img src="img/html.webp" alt="tema 2"></a>
+            <div class="tema_billede_web_1">
+                <img src="img/html.webp" alt="tema5">
             </div>
         </div>
 
 
+
         <div class="tema_opgave_web">
-            <div id="tema_tekst">
+            <div class="tema_tekst">
                 <h2>CSS sproget</h2>
                 <p>
                     I vores første tema blev vi også introduceret til CSS sproget.
                     CSS er et sprog til styling af HTML-dokumenter og styring af deres visuelle præsentation. Det giver
-                    mulighed for at ændre layout, farver, skrifttyper og andre visuelle egenskaber. Til højre kan i se
+                    mulighed for at ændre layout, farver, skrifttyper og andre visuelle egenskaber. Her kan i se
                     en bid af mig styling på min index.html, som også er vist ovenfor. Her anvender jeg
                     centrale begreber og termer i CSS. <br> Jeg styler f.eks. "dt" - tagget med en text-transform med
                     none, så jeg nulstille eventuelle transformationer der er blevet lavet før. <br>Har bruger jeg også
@@ -159,64 +172,66 @@
                     overordnede element. <br>Derudover giver jeg også min tekst en størrelse ved font-size.
                 </p>
             </div>
-            <div id="pil_icon">
+            <div class="pil_icon">
                 <img src="img/pil_icon.webp" alt="pil">
             </div>
-            <div id="tema_billede_web">
-                <img src="img/css.webp" alt="tema 2"></a>
+            <div class="tema_billede_web_2">
+                <img src="img/css.webp" alt="tema 2">
             </div>
         </div>
+
+
         <div class="tema_opgave_web">
-            <div id="tema_tekst">
+            <div class="tema_tekst">
                 <h2>Grid og Flex</h2>
                 <p>
                     Et af kravene til vores opgave var at anvende Grid og Flex. CSS Grid og Flex (Flexbox) er to
                     forskellige layoutmodeller i CSS. De er designet til at løse forskellige layoutproblemer. Begge
                     modeller tilbyder værktøjer til oprettelse af layoutstrukturer, men de har
-                    forskellige anvendelsesområder og egenskaber. <br>Her til højre kan du set et eksampel hvor jeg
+                    forskellige anvendelsesområder og egenskaber. <br>Her kan i se et eksempel hvor jeg
                     anvender de to Layoutmodeller. <br> Flexbox er designet til at arbejde med en dimension ad gangen,
                     det vil sige
                     enten vandret (rows) eller lodret (columns). Hvorimod Grid er en mere omfattende layoutmodel og
                     er designet til at håndtere både rækker og kolonner samtidigt. <br>
                 </p>
             </div>
-            <div id="pil_icon">
+            <div class="pil_icon">
                 <img src="img/pil_icon.webp" alt="pil">
             </div>
-            <div id="tema_billede_web">
-                <img src="img/grid_flex.webp" alt="tema 2"></a>
+            <div class="tema_billede_web_3">
+                <img src="img/grid_flex.webp" alt="tema 2">
             </div>
         </div>
+
+
         <div class="tema_opgave_web">
-            <div id="tema_tekst">
+            <div class="tema_tekst">
                 <h2>Respontivt webdesign: Media queries</h2>
                 <p>
                     I tema 2 blev vi også introduceret til Respontivt webdesign som har til formål at sikre, at
                     indholdet og layoutet tilpasser sig dynamisk ift. den enhed, som brugeren benytter sig. <br>I
                     studiestartsprøven var det et krav at have en respontiv hjemmeside. Her anvender man Media queries.
                     Media queries er en funktion i CSS, som giver mulighed for at anvende specifikke stilarter
-                    baseret på forskellige egenskaber for enheder eller browservinduer. Til højre kan i se at jeg har
+                    baseret på forskellige egenskaber for enheder eller browservinduer. Her kan i se at jeg har
                     givet min media query "min-width: 800px", som specificerer, at stilarterne skal gælde, når skærmens
                     bredde er 800 pixels eller mere.
                 </p>
             </div>
-            <div id="pil_icon">
+            <div class="pil_icon">
                 <img src="img/pil_icon.webp" alt="pil">
             </div>
-            <div id="tema_billede_web">
-                <img src="img/media.webp" alt="tema 2"></a>
+            <div class="tema_billede_web_4">
+                <img src="img/media.webp" alt="tema 2">
+
             </div>
         </div>
-
-
-
-
-
 
     </main>
 
 
-    <footer class="footer_grid" id="footer_grid">
+
+
+    <footer class="footer_grid">
 
 
         <div class="footer_grid_2">
@@ -239,8 +254,4 @@
         </div>
 
     </footer>
-
-
-
-
 </body>

@@ -1,3 +1,5 @@
+/* _________Mobile_________ */
+
 /************* Site ****************/
 @font-face {
   font-family: font_1;
@@ -29,18 +31,18 @@ main {
 h1 {
   font-size: 4rem;
   font-family: font_1;
-  margin-top: 100px;
+  margin-top: 20%;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: font_1;
-  margin-top: 40px;
+  margin-top: 15%;
 }
 h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: font_1;
-  margin-top: 100px;
+  margin-top: 20%;
   border-bottom: 1px solid #000;
 }
 h4 {
@@ -56,14 +58,364 @@ p {
   line-height: 185%;
 }
 
+/************* header ****************/
+
+.header_desktop {
+  display: none;
+}
+
+.nav-container {
+  height: 62px;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #223cfa;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: font_2;
+}
+
+.navbar .nav-container a:hover {
+  font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+}
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+}
+.nav-container .hamburger-lines {
+  display: block;
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #223cfa;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 60px;
+  background-color: #ffffff;
+  height: 800px;
+  width: 100%;
+  transform: translate(-150%);
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 18%;
+  height: auto;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo {
+  display: none;
+}
+
+.body_img {
+  background-image: url(img/baggrund.webp);
+}
+
+/************* index.html/forside ****************/
+.body_img {
+  background-image: url(img/baggrund.webp);
+}
+#forside_tekst {
+  font-size: 1.5rem;
+  font-family: font_1;
+  font-weight: lighter;
+  margin-top: 1.5rem;
+}
+
+#billede_1 img {
+  width: 100%;
+  height: auto;
+  margin-left: 20%;
+}
+
+/************* mig.html/om mig ****************/
+.body_img2 {
+  background-image: url(img/baggrund.webp);
+}
+
+#billede_mig_2 {
+  width: 100%;
+  height: auto;
+  margin-left: 7%;
+  margin-top: 15%;
+}
+.mit_cv_item {
+  background-color: #f5f4f4;
+  padding: 15%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #6b88f1;
+}
+.mit_cv_item p {
+  font-size: 0.8rem;
+}
+
+/************* projekter.html/projekter ****************/
+
+.body_img3 {
+  background-image: url(img/baggrund3.webp);
+}
+
+.tema h2 {
+  font-size: 2.5rem;
+  color: #223cfa;
+  text-align: center;
+  padding: 0;
+  margin-top: 7%;
+}
+
+.tema_billede {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  text-align: center;
+  padding: 10%;
+  box-shadow: 10px 20px 20px #6b88f1;
+  background: linear-gradient(to right, #4a61f6, rgb(186, 186, 229), #fafafa);
+}
+.tema_billede a {
+  text-decoration-line: none;
+  color: #223cfa;
+  text-transform: none;
+}
+.tema_billede h2 {
+  margin-bottom: 0;
+}
+.tema_billede:hover {
+  transform: scale(1.1);
+}
+
+/************* kontakt.html/kontakt ****************/
+.body_img4 {
+  background-image: url(img/baggrund4.webp);
+}
+
+#mail_icon {
+  width: 50%;
+}
+#telefon_icon {
+  width: 40%;
+}
+
+/************* Temaer ****************/
+
+.tema_lært {
+  width: 100%;
+  padding: 3%;
+  background-color: #f0f0f0;
+  border-radius: 10%;
+  box-shadow: 0px 0px 20px #6b88f1;
+}
+.pil_icon {
+  display: none;
+}
+.tema_billede_ani img,
+#tema_billede_web img,
+.tema_billede_ux img,
+.tema_billede_indhold img,
+.tema_billede_indhold_3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px #6b88f1;
+}
+.tema_opgave img:hover {
+  transform: scale(1.1);
+}
+
+.tema_billede_ux,
+.tema_billede_ani {
+  margin-top: 8%;
+}
+.tema img:hover {
+  transform: scale(1.1);
+}
+
+/************* web.html/grundlæggende web ****************/
+
+.tema_beskrivelse {
+  width: 100%;
+  padding-right: 2%;
+  margin-bottom: 10%;
+}
+.tema_lært ul {
+  font-family: font_1;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.tema_lært h2 {
+  margin-top: 6%;
+}
+#tema_billede_web {
+  padding-top: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.tema_billede_web_1 {
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-top: 4%;
+  width: 100%;
+  height: auto;
+}
+.tema_billede_web_2 {
+  padding-right: 15%;
+  padding-top: 5%;
+  width: 100%;
+  height: auto;
+}
+.tema_billede_web_3 {
+  padding-top: 2%;
+  padding-right: 12%;
+  width: 120%;
+  height: auto;
+}
+.tema_billede_web_4 {
+  padding-left: 20%;
+  width: 80%;
+  height: auto;
+  margin-bottom: 15%;
+}
+
+/************* ux.html/grundlæggende UX/UI ****************/
+
+.tema_lært ul {
+  font-family: font_1;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+/************* animation.html/grundlæggende animation ****************/
+.tema_opgave_ani_1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px #6b88f1;
+}
+.tema_opgave_ani_1 {
+  padding: 10%;
+}
+.tema_opgave_ani_1 h4 {
+  margin-top: 10%;
+  text-align: center;
+}
+.tema_billede_ani_2 img {
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+/************* indhold.html/grundlæggende video indhold ****************/
+.tema_billede_indhold {
+  margin-top: 7%;
+}
+.tema_billede_indhold img {
+  margin-top: 4%;
+}
+.tema_billede_indhold_3 {
+  text-align: center;
+  align-items: center;
+  padding: 4%;
+  gap: 2%;
+}
+
+/************* footer ****************/
+
+.footer_grid p {
+  font-size: 0.7rem;
+  margin-left: 5%;
+}
+.footer_grid {
+  border-top: 1px solid #000;
+  margin-top: 13%;
+  margin-bottom: 5%;
+}
+.footer_grid_3 {
+  margin-top: 5%;
+}
+.footer_grid_3 img {
+  width: 70%;
+  height: auto;
+}
+
 /* ________DESKTOP______ */
 
-/************* menu desktop ****************/
 @media (min-width: 800px) {
+  .header_desktop {
+    display: block;
+  }
   .header_mobile {
     display: none;
   }
-
   .logo_desktop {
     width: 50%;
     padding-right: 5%;
@@ -77,424 +429,188 @@ p {
     list-style: none;
     text-transform: uppercase;
   }
-
   .menu-items_desktop a {
     font-size: 1.5rem;
     text-decoration: none;
     color: #223cfa;
     font-family: font_2;
   }
-
   .menu-items_desktop a:hover {
     font-size: 1.7rem;
   }
-}
 
-/************* forside ****************/
-
-.body_img {
-  background-image: url(img/baggrund.webp);
-}
-
-#forside_tekst {
-  font-size: 1.5rem;
-  font-family: font_1;
-  font-weight: lighter;
-  margin-top: 1.5rem;
-}
-
-.billede_1 {
-  width: 100%;
-  height: auto;
-}
-
-/************* Om mig ****************/
-
-.body_img2 {
-  background-image: url(img/baggrund3.webp);
-}
-
-#billede_mig_2 {
-  width: 100%;
-  height: auto;
-  margin-left: 2%;
-  margin-top: 15%;
-}
-#mig_tekst_1 {
-  padding-right: 25%;
-}
-
-.mig_grid_1 p {
-  margin-top: 10px;
-}
-.mit_cv {
-  margin-top: 35px;
-}
-
-.mit_cv_item {
-  background-color: #f5f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px #6b88f1;
-}
-
-/************* projekter ****************/
-
-.body_img3 {
-  background-image: url(img/baggrund3.webp);
-}
-
-.tema h2 {
-  font-size: 2.5rem;
-  color: #223cfa;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-.tema a img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  transition: transform 0.3s;
-  box-shadow: 10px 20px 20px #6b88f1;
-}
-.tema img:hover {
-  transform: scale(1.1);
-}
-
-/************* grundlæggende web, ux/ui, animation, video indhold  ****************/
-
-.tema_beskrivelse {
-  width: 100%;
-  padding: 20px;
-  padding-right: 15%;
-}
-.tema_lært {
-  width: 100%;
-  padding: 20px;
-  background-color: #f5f4f4;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px #6b88f1;
-}
-.tema_lært ul {
-  font-family: font_1;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-}
-
-.tema_beskrivelse h2 {
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.tema_beskrivelse p {
-  font-size: 16px;
-  line-height: 1.8rem;
-}
-.tema_opgave img:hover {
-  transform: scale(1.1);
-}
-#tema_tekst p {
-  font-size: 16px;
-  line-height: 1.8rem;
-}
-#tema_billede_web img,
-#tema_billede_ux img,
-#tema_billede_indhold img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0px 0px 30px #6b88f1;
-}
-#tema_billede_web,
-#tema_billede_ux,
-#tema_billede_indhold {
-  padding-left: 20%;
-}
-#pil_icon {
-  position: absolute;
-  width: 5%;
-  height: auto;
-  right: 43%;
-  margin-top: 9%;
-}
-
-#tema_tekst {
-  width: 95%;
-  height: auto;
-  padding: 10px;
-}
-
-/************* grundlæggende web ****************/
-
-#tema_billede_web {
-  margin-top: 50px;
-}
-
-/************* ux/ui ****************/
-
-#tema_billede_ux {
-  margin-top: 60px;
-}
-
-/************* Video indhold ****************/
-
-.tema_opgave_hovedeindhold {
-  margin-top: 50px;
-}
-#tema_billede_indhold img {
-  margin-top: 50px;
-}
-#tema_billede_indhold video {
-  margin-top: 50px;
-}
-.tema_billede_indhold_2 img {
-  margin-top: 10px;
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0px 0px 30px #6b88f1;
-}
-
-#tema_billede_indhold_3 {
-  gap: 50px;
-  margin-top: 50px;
-  margin-top: 100px;
-}
-
-.tema_billede_indhold_2 {
-  margin-top: 100px;
-  justify-content: center;
-}
-
-h4 {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-/************* animation ****************/
-#tema_billede_ani img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-#tema_billede_ani {
-  padding-left: 20%;
-  margin-top: 3%;
-}
-
-/************* Kontakt ****************/
-
-.body_img4 {
-  background-image: url(img/baggrund4.webp);
-}
-
-#mail_icon {
-  width: 35%;
-  height: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-#telefon_icon {
-  width: 30%;
-  height: auto;
-  padding-left: 7px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-#mail_icon {
-  width: 25%;
-}
-#telefon_icon {
-  width: 20%;
-}
-
-/************* footer ****************/
-
-.footer_grid p {
-  font-size: 0.8rem;
-  margin-left: 5%;
-}
-
-.footer_grid {
-  border-top: 1px solid #000;
-  margin-top: 65px;
-  margin-bottom: 30px;
-}
-
-.footer_grid_3 {
-  margin-top: 10px;
-}
-
-.footer_grid_3 img {
-  width: 70%;
-  height: auto;
-}
-
-.footer_grid_3 img {
-  width: 40%;
-  height: auto;
-}
-
-/* _________Mobile_________ */
-
-/************* menu  ****************/
-
-@media (max-width: 800px) {
-  .header_desktop {
-    display: none;
+  /************* index.html/forside ****************/
+  h1 {
+    margin-top: 10%;
+    margin-bottom: 0;
+  }
+  #forside_tekst {
+    margin-top: 2%;
+  }
+  #billede_1 img {
+    width: 90%;
+    height: auto;
+    margin-left: 8%;
   }
 
-  .nav-container {
-    height: 62px;
+  /************* mig.html/om mig ****************/
+
+  h3 {
+    margin-top: 7%;
+  }
+  h2 {
+    margin-top: 6%;
+  }
+  .mit_cv {
+    margin-top: 3%;
+  }
+  .mig_grid_1 p {
+    margin-top: 2%;
+  }
+  #mig_tekst_1 {
+    padding-right: 35%;
+  }
+  #billede_mig_2 {
+    margin-left: 0;
+    margin-top: 34%;
+  }
+  .mit_cv_grid {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 10%;
+  }
+  .mit_cv_item {
+    padding: 5%;
   }
 
-  .navbar .nav-container li {
-    list-style: none;
-  }
+  /************* projekter.html/projekter ****************/
 
-  .navbar .nav-container a {
-    text-decoration: none;
-    color: #223cfa;
-    font-weight: 500px;
-    font-size: 2rem;
-    font-family: font_2;
-  }
-
-  .navbar .nav-container a:hover {
-    font-weight: bolder;
-  }
-
-  .nav-container {
-    display: block;
-    position: relative;
-  }
-  .nav-container .checkbox {
-    position: absolute;
-    display: block;
-    height: 32px;
-    width: 32px;
-    top: 20px;
-    left: 20px;
-    z-index: 5;
-    opacity: 0;
-  }
-  .nav-container .hamburger-lines {
-    display: block;
-    height: 30px;
-    width: 40px;
-    position: absolute;
-    top: 25px;
-    left: 20px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .nav-container .hamburger-lines .line {
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #223cfa;
-  }
-
-  .nav-container .hamburger-lines .line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
-  }
-  .nav-container .hamburger-lines .line2 {
-    transition: transform 0.2s ease-in-out;
-  }
-  .nav-container .hamburger-lines .line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
-  }
-
-  .navbar .menu-items {
-    padding-top: 60px;
-    background-color: #ffffff;
-    height: 800px;
-    width: 100%;
-    transform: translate(-150%);
-    flex-direction: column;
-    transition: transform 0.5s ease-in-out;
+  .tema_billede {
+    border-radius: 40px;
     text-align: center;
+    padding: 5%;
   }
 
-  .navbar .menu-items li {
-    margin-bottom: 10px;
-    font-size: 1rem;
+  .projekt_container {
+    padding-bottom: 8%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
-  .logo {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 18%;
-    height: auto;
-  }
-
-  .nav-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(0);
-  }
-
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-    transform: rotate(45deg);
-  }
-
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-    transform: scaleY(0);
-  }
-
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-    transform: rotate(-45deg);
-  }
-
-  .nav-container input[type="checkbox"]:checked ~ .logo {
-    display: none;
-  }
-
-  /************* om mig ****************/
-  #billede_mig_2 {
-    margin-top: 60px;
-  }
-  #billede_mig_2 {
-    width: 100%;
-    height: auto;
-  }
-
-  /************* Kontakt ****************/
+  /************* kontakt.html/kontakt ****************/
 
   #mail_icon {
-    width: 50%;
+    width: 25%;
   }
   #telefon_icon {
-    width: 45%;
+    width: 18%;
+    margin-left: 2.5%;
+    margin-bottom: 20%;
+  }
+  /************* Temaer ****************/
+  .pil_icon {
+    display: block;
+    visibility: visible;
+    width: auto;
+    height: auto;
+  }
+  .tema_beskrivelse {
+    padding: 20px;
+    padding-right: 18%;
+  }
+  .tema_lært ul {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .pil_icon {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    right: 43%;
+    margin-top: 9%;
+  }
+  #tema_billede_web,
+  .tema_billede_ux,
+  .tema_billede_indhold {
+    padding-left: 20%;
+  }
+  .tema_lært {
+    margin-top: 15%;
+  }
+
+  /************* web.html/grundlæggende web ****************/
+
+  .tema_tekst {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+  }
+  #tema_billede_web {
+    margin-top: 3%;
+  }
+  .tema_billede_web_1 {
+    padding-left: 12%;
+    padding-right: 10%;
+    padding-top: 0;
+  }
+  .tema_billede_web_2 {
+    padding-left: 6%;
+    padding-right: 12%;
+    padding-top: 9%;
+  }
+  .tema_billede_web_3 {
+    padding-top: 2%;
+    padding-left: 10%;
+    width: 120%;
+  }
+  .tema_billede_web_4 {
+    padding-left: 30%;
+    width: 90%;
+  }
+
+  /************* animation.html/grundlæggende animation ****************/
+
+  .tema_billede_ani {
+    padding-left: 20%;
+    margin-top: 8%;
+  }
+  .tema_opgave_ani_1 {
+    padding: 0;
+  }
+  .tema_billede_ani_2 img {
+    width: 100%;
+    height: auto;
+    padding-left: 18%;
+    margin-top: 5%;
+  }
+
+  /************* indhold.html/grundlæggende video indhold ****************/
+
+  .tema_billede_indhold_3 {
+    margin-left: 3%;
+    margin-right: 40%;
+    padding: 1%;
+    gap: 5%;
   }
 
   /************* footer ****************/
 
   .footer_grid p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-left: 5%;
   }
-
   .footer_grid {
-    border-top: 1px solid #000;
-    margin-top: 65px;
-    margin-bottom: 30px;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
-
   .footer_grid_3 {
-    margin-top: 10px;
+    margin-top: 5%;
   }
-
   .footer_grid_3 img {
-    width: 70%;
+    width: 40%;
     height: auto;
   }
 }
